@@ -1,0 +1,118 @@
+@media screen and (max-width: 900px) {
+    .info, .object {
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .info, .object {
+        width: 50%;
+    }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #efd81d;
+    font: 900 3.5em 'Alfa Slab One', Arial, Sans-Serif;
+    margin: 1em 0;
+}
+
+p {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+a {
+    color: #efd81d;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*
+body {
+    background: #091921;
+    background: linear-gradient(60deg, #091921 50%, #5895b9 50%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}*/
+
+.page {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.info {
+    float: left;
+    padding: 3em;
+}
+
+.object {
+    align-items: center;
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding: 3em;
+}
+
+.calculator {
+    display: grid;
+    font-size: 1.5em;
+    border: 10px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 2em;
+    box-shadow: inset 0 0 3px rgb(0, 0, 0);
+    width: 400px;
+}
+
+.calculator span {
+    display: grid;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+    transition: 0.1s ease 0.1s;
+}
+
+.calculator span:active {
+    background: #888;
+    color: #111;
+    transition: 0s;
+}
+
+.calculator span.symbol {
+    background: #a25732;
+}
+
+.calculator span.clear {
+    grid-column: span 3;
+    width: 300px;
+    background: #888;
+}
+
+.calculator span.zero {
+    grid-column: span 2;
+    width: 200px;
+}
